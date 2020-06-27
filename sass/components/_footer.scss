@@ -1,0 +1,152 @@
+.bg {
+  background-color: #2f303a;
+}
+
+.footer-continer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.adress {
+  display: inline-block;
+  margin-bottom: 60px;
+
+  .text {
+    margin-top: 20px;
+    color: $button;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  .mail {
+    display: block;
+    padding-top: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+
+.icon-footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.social-footer + .social-footer {
+  margin-left: 10px;
+}
+
+.icon-footer {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.footer {
+  margin-bottom: 60px;
+
+  .title {
+    color: $button;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+}
+
+.footer-subscription {
+  .title {
+    color: $button;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+
+  .button {
+    display: flex;
+    background-color: $accent-color;
+    color: $button;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 29px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+  }
+
+  .icon-footer-button {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+.footer-form {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  min-width: 100%;
+  padding: 18px 12px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+
+  margin-bottom: 20px;
+}
+
+.footer-form:placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.copiraite {
+  display: none;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
