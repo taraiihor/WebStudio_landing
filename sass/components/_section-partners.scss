@@ -22,13 +22,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: -15px;
 }
 
 .icon-logo {
-  display: flex;
+  display: inline-flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  min-width: 170px;
+  width: 170px;
   height: 90px;
   justify-content: center;
   align-items: center;
@@ -43,10 +44,10 @@
   }
 }
 
-.icon-partners:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 30px;
+.icon-partners {
+  margin: 15px;
 }
 
-.icon-partners:not(:nth-child(2n)) {
-  margin-right: 30px;
-}
+// .icon-partners:not(:nth-child(2n)) {
+//   margin-right: 30px;
+// }
