@@ -1,3 +1,57 @@
 .section-work {
-  display: none;
+  display: block;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.section-work .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work-cards {
+  display: flex;
+  margin: -15px;
+
+  .card-presentation {
+    position: relative;
+    margin: 15px;
+  }
+}
+
+// .work-cards .card + .card {
+//   margin-left: 30px;
+// }
+
+.section-work .subtitle {
+  color: $title-text-color;
+}
+
+.section-work .desc {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $button;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }

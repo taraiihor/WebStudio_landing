@@ -1,0 +1,117 @@
+.items-card {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+
+  margin: -15px;
+  padding-bottom: 60px;
+}
+
+.element {
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
+  max-width: 450px;
+  margin: 15px;
+}
+
+// .element:not(:nth-child(3n)) {
+//   margin-right: 30px;
+// }
+
+// .element:not(:nth-last-child(-n + 3)) {
+//   margin-bottom: 30px;
+// }
+
+.items-color {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.items {
+  .title {
+    @media screen and (max-width: 1199px) {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: $title-text-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  .text {
+    margin: 0px;
+    color: $primery-text-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+  }
+
+  .text-text {
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    margin: 0px;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: $button;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    opacity: 0;
+
+    /* overflow-y: auto; */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.instruktion-card {
+  display: block;
+
+  &:focus .text-text,
+  &:hover .text-text {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+
+.shadows {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.element-hiade {
+  position: relative;
+  overflow: hidden;
+}

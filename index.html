@@ -12,14 +12,6 @@
     <header class="header-hiade page-header">
       <div class="continer site-nav">
         <a href="" class="logo list">Web<span class="span"> Studio</span></a>
-        <div class="">
-          <button class="menu-button" type="button" data-menu-button>
-            <svg width="24px" height="16px" aria-label="Переключатель меню">
-              <use class="icon-menu" href="./imeges/symbol-bur.svg#icon-menu_24px"></use>
-              <use class="icon-close-menu" href="./imeges/symbol-bur.svg#icon-close_24px"></use>
-            </svg>
-          </button>
-        </div>
         <div class="menu-container" data-menu>
           <nav class="nav-site">
             <ul class="list nav-site-item">
@@ -45,6 +37,12 @@
             </li>
           </ul>
         </div>
+        <button class="menu-button" type="button" data-menu-button>
+          <svg width="24px" height="16px" aria-label="Переключатель меню">
+            <use class="icon-menu" href="./imeges/symbol-bur.svg#icon-menu_24px"></use>
+            <use class="icon-close-menu" href="./imeges/symbol-bur.svg#icon-close_24px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -114,7 +112,7 @@
       <section class="section-work continer">
         <h2 class="title">Чем мы занимаемся</h2>
         <ul class="work-cards list">
-          <li class="card">
+          <li class="card-presentation">
             <img
               src="./imeges/notebook.jpg"
               alt="ноутбук из открытым сайтом"
@@ -122,11 +120,11 @@
             />
             <h3 class="desc">Десктопные приложения</h3>
           </li>
-          <li class="card">
+          <li class="card-presentation">
             <img src="./imeges/phone.jpg" alt="смартфон" width="370" />
             <h3 class="desc">Мобильные приложения</h3>
           </li>
-          <li class="card">
+          <li class="card-presentation">
             <img src="./imeges/desktop.jpg" alt="компютер" width="370" />
             <h3 class="desc">Дизайнерские решения</h3>
           </li>
@@ -327,45 +325,48 @@
     <!--подвал-->
     <footer class="bg">
       <div class="continer footer-continer">
-        <address class="adress list footer-list">
-          <a href="" class="logo list">Web<span class="span-footer"> Studio</span></a>
-          <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
-          <a href="mailto:info@devstudio.com" class="mail list">info@devstudio.com</a>
-          <a href="tel:+380961111111" class="mail list">+38 096 111 11 11</a>
-        </address>
-        <div class="footer footer-list">
-          <h2 class="title">присоединяйтесь</h2>
-          <ul class="icon-footer-social list">
-            <li class="social-footer">
-              <a href="" aria-label="иконка instagtam" class="icon-footer">
-                <svg width="20px" ; height="20px" ;>
-                  <use href="./imeges/symbol-defs.svg#icon-instagram" </use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer">
-              <a href="" aria-label="иконка instagtam" class="icon-footer">
-                <svg width="20px" ; height="20px" ;>
-                  <use href="./imeges/symbol-defs.svg#icon-twitter" </use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer">
-              <a href="" aria-label="иконка instagtam" class="icon-footer">
-                <svg width="20px" ; height="20px" ;>
-                  <use href="./imeges/symbol-defs.svg#icon-facebook" </use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-footer">
-              <a href="" aria-label="иконка instagtam" class="icon-footer">
-                <svg width="20px" ; height="20px" ;>
-                  <use href="./imeges/symbol-defs.svg#icon-linkedin" </use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-tablet">
+          <address class="adress list footer-list">
+            <a href="" class="logo list">Web<span class="span-footer"> Studio</span></a>
+            <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@devstudio.com" class="mail list">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="mail list">+38 096 111 11 11</a>
+          </address>
+          <div class="footer footer-list">
+            <h2 class="title">присоединяйтесь</h2>
+            <ul class="icon-footer-social list">
+              <li class="social-footer">
+                <a href="" aria-label="иконка instagtam" class="icon-footer">
+                  <svg width="20px" ; height="20px" ;>
+                    <use href="./imeges/symbol-defs.svg#icon-instagram" </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer">
+                <a href="" aria-label="иконка instagtam" class="icon-footer">
+                  <svg width="20px" ; height="20px" ;>
+                    <use href="./imeges/symbol-defs.svg#icon-twitter" </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer">
+                <a href="" aria-label="иконка instagtam" class="icon-footer">
+                  <svg width="20px" ; height="20px" ;>
+                    <use href="./imeges/symbol-defs.svg#icon-facebook" </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer">
+                <a href="" aria-label="иконка instagtam" class="icon-footer">
+                  <svg width="20px" ; height="20px" ;>
+                    <use href="./imeges/symbol-defs.svg#icon-linkedin" </use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        
         <div class="footer-subscription footer-list">
           <h2 class="title">Подпишитесь на рассылку</h2>
           <form class="form-buttom" action="">
@@ -378,7 +379,7 @@
           </form>
         </div>
       </div>
-      <p class="continer copiraite">2020 | Developed by GoIT Students</p>
+      <!-- <p class="continer copiraite">2020 | Developed by GoIT Students</p> -->
     </footer>
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
@@ -394,7 +395,9 @@
         <form class="" action="" autocomplete="off">
           <div class="form-modal">
             <input class="form-input" type="text" placeholder=" " id="name">
-            <label class="input-label" for="name">Имя</label>
+            <label class="input-label" for="name">Имя
+              
+            </label>
             <svg class="icon-modal">
               <use href="./imeges/modal-icon.svg#icon-person-black"></use>
             </svg>            

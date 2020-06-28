@@ -1,4 +1,9 @@
 .section-team {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   background: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -59,10 +64,6 @@
   }
 }
 
-.card:not(:nth-last-child(-n + 1)) {
-  margin-bottom: 30px;
-}
-
 .team-color-card {
   background-color: $button;
   padding-top: 30px;
@@ -96,5 +97,31 @@
     border-radius: 50%;
     background-color: $accent-color;
     fill: $button;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card:not(:nth-last-child(-n + 1)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-team-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+
+  .card {
+    width: 354px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 270px;
   }
 }

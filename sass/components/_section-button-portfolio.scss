@@ -1,0 +1,48 @@
+.button-items {
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 93px;
+    padding-bottom: 50px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin-left: -8px;
+  margin-bottom: -15px;
+
+  .items {
+    margin-left: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+.button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+
+  border: 0;
+  border-radius: 4px;
+
+  &:focus,
+  &:hover {
+    color: $button;
+
+    background-color: $accent-color;
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+}

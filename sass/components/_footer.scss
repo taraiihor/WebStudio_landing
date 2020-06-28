@@ -3,12 +3,23 @@
 }
 
 .footer-continer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-start;
+  }
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
 }
 
 .adress {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
   display: inline-block;
   margin-bottom: 60px;
 
@@ -35,7 +46,7 @@
 }
 
 .icon-footer-social {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
 }
 
@@ -91,6 +102,10 @@
   }
 
   .button {
+    @media screen and (min-width: 1200px) {
+      height: 50px;
+      margin-left: 12px;
+    }
     display: flex;
     background-color: $accent-color;
     color: $button;
@@ -117,9 +132,17 @@
 }
 
 .footer-form {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 50px;
+    margin-bottom: 0px;
+    width: 358px;
+  }
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  min-width: 100%;
+
   padding: 18px 12px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
@@ -137,16 +160,47 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.copiraite {
-  display: none;
-  padding-top: 18px;
-  padding-bottom: 21px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.4);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.03em;
+// .copiraite {
+//   @media screen and (min-width: 1200px) {
+//     display: block;
+//   }
+//   display: none;
+//   padding-top: 18px;
+//   padding-bottom: 21px;
+//   border-top: 1px solid rgba(255, 255, 255, 0.1);
+//   color: rgba(255, 255, 255, 0.4);
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 12px;
+//   line-height: 2;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+// }
+
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-form {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  // .footer-tablet {
+  //   // display: flex;
+  //   // justify-content: space-evenly;
+  // }
+
+  .footer-form {
+    width: 450px;
+  }
+}
+.form-buttom {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
