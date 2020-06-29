@@ -1,9 +1,15 @@
 .backdrop {
+  @media screen and (max-width: 527px) {
+    overflow-y: scroll;
+  }
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding-top: 93px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
@@ -17,14 +23,16 @@
 }
 
 .modal {
-  position: fixed;
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
+  position: relative;
   top: 50%;
   left: 50%;
 
-  // min-height: 581px;
-  width: 528px;
+  max-width: 528px;
   padding: 40px;
-
+  text-align: center;
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -32,8 +40,6 @@
 
   transform: translate(-50%, -50%) scale(1);
 }
-
-// Розібратись
 
 .button-close {
   position: absolute;
@@ -95,11 +101,11 @@
 
 .form-input {
   display: block;
-  width: 448px;
+  width: 100%;
   margin-bottom: 28px;
   padding: 12px 42px;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.15;
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -170,7 +176,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.15;
   letter-spacing: 0.01em;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -180,23 +186,30 @@
 }
 
 .checkbox-text {
-  display: flex;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  display: inline-flex;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71%;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   justify-content: center;
   align-items: center;
 }
 
 .checkbox-document {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  display: contents;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71%;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
@@ -222,16 +235,36 @@
   clip: rect(0 0 0 0);
 }
 
-// .checkbox-icon:checked + .checkbox-text::before {
-//   background: url(../imeges/icon-check-focus.svg);
-// }
+.button-form {
+  display: inline-block;
 
-// .checkbox-text::before {
-//   content: "";
-//   height: 15px;
-//   width: 16px;
-//   margin-right: 8px;
-//   background: url(../imeges/icon-chek.svg);
-//   -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+  min-width: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: $button;
+
+  padding: 10px 32px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+}
+.checkbox-icon:checked + .checkbox-text::before {
+  background: url(../imeges/icon-check-focus.svg);
+}
+
+.checkbox-text::before {
+  content: "";
+  height: 15px;
+  width: 16px;
+  margin-right: 8px;
+  background: url(../imeges/icon-chek.svg);
+  // -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
