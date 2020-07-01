@@ -1,40 +1,25 @@
 .hero {
-  @media screen and (max-width: 1199px) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.8),
-        rgba(47, 48, 58, 0.8)
-      ),
-      url(../imeges/hero-768.jpg);
-    background-size: cover;
-  }
-  @media screen and (max-width: 768px) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.8),
-        rgba(47, 48, 58, 0.8)
-      ),
-      url(../imeges/hero-768.jpg);
-  }
-  @media screen and (max-width: 480px) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.8),
-        rgba(47, 48, 58, 0.8)
-      ),
-      url(../imeges/hero-480.jpg);
-  }
-
   width: 100%;
-
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../imeges/hero.jpg);
+    url(../imeges/hero-480.jpg);
 
-  padding-top: 118px;
-  padding-bottom: 118px;
-  text-align: center;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../imeges/hero-768.jpg);
+  }
 
   @media screen and (min-width: 1200px) {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(
@@ -43,12 +28,7 @@
       ),
       url(../imeges/hero-1200.jpg);
   }
-
   .title {
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.36;
-    }
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -56,15 +36,16 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: $button;
-
     margin-bottom: 30px;
-  }
 
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
   .button {
     display: inline-block;
-
     min-width: 200px;
     font-family: Roboto;
     font-style: normal;
@@ -74,9 +55,7 @@
     letter-spacing: 0.06em;
     text-align: center;
     color: $button;
-
     padding: 10px 32px;
-
     background: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;

@@ -1,7 +1,4 @@
 .backdrop {
-  @media screen and (max-width: 527px) {
-    overflow-y: scroll;
-  }
   position: fixed;
   top: 0;
   left: 0;
@@ -15,6 +12,10 @@
   opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 527px) {
+    overflow-y: scroll;
+  }
 }
 
 .backdrop.is-hidden {
@@ -23,9 +24,6 @@
 }
 
 .modal {
-  @media screen and (max-width: 1199px) {
-    max-width: 450px;
-  }
   position: relative;
   top: 50%;
   left: 50%;
@@ -39,6 +37,10 @@
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
 }
 
 .button-close {
@@ -186,9 +188,6 @@
 }
 
 .checkbox-text {
-  @media screen and (max-width: 1199px) {
-    font-size: 12px;
-  }
   display: inline-flex;
   font-family: Roboto;
   font-style: normal;
@@ -198,12 +197,13 @@
   letter-spacing: 0.03em;
   justify-content: center;
   align-items: center;
-}
 
-.checkbox-document {
   @media screen and (max-width: 1199px) {
     font-size: 12px;
   }
+}
+
+.checkbox-document {
   display: contents;
   font-family: Roboto;
   font-style: normal;
@@ -213,6 +213,10 @@
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .textarea-modal {
