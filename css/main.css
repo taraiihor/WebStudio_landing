@@ -913,8 +913,16 @@ p {
   border-radius: 4px;
   padding: 18px 12px;
   background-color: transparent;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form {
+    min-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -949,18 +957,6 @@ p {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer-form {
-    min-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1200) {
-  .footer-form {
-    width: 450px;
   }
 }
 
@@ -1069,11 +1065,12 @@ p {
   letter-spacing: 0.01em;
   color: #757575;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input {
@@ -1094,7 +1091,7 @@ p {
 .form-input:not(:placeholder-shown) + .input-label {
   color: #2196f3;
   -webkit-transform: translateY(-40px) translateX(-26px);
-  transform: translateY(-40px) translateX(-26px);
+          transform: translateY(-40px) translateX(-26px);
 }
 
 .form-input:focus ~ .icon-modal,
@@ -1115,7 +1112,7 @@ p {
   width: 18px;
   height: 18px;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1136,7 +1133,7 @@ p {
 .modal-textarea:not(:placeholder-shown) + .textarea-coments {
   color: #2196f3;
   -webkit-transform: translateY(-32px);
-  transform: translateY(-32px);
+          transform: translateY(-32px);
 }
 
 .modal-textarea:focus,
@@ -1159,6 +1156,7 @@ p {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-text {
