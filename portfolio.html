@@ -59,25 +59,25 @@
         <!-- list of categories -->
         <ul class="list button-items">
           <li class="items">
-            <button class="button list">Все</button>
+            <button type='button' class="button list" data-control='all'>Все</button>
           </li>
           <li class="items">
-            <button class="button">Веб-сайты</button>
+            <button type='button' class="button" data-control='web'>Веб-сайты</button>
           </li>
           <li class="items">
-            <button class="button">Приложения</button>
+            <button type='button' class="button" data-control='app'>Приложения</button>
           </li>
           <li class="items">
-            <button class="button">Дизайн</button>
+            <button type='button' class="button" data-control='desing'>Дизайн</button>
           </li>
           <li class="items">
-            <button class="button">Маркетинг</button>
+            <button type='button' class="button" data-control='marketing'>Маркетинг</button>
           </li>
         </ul>
 
         <!-- cards -->
         <ul class="items list items-card">
-          <li class="element">
+          <li class="element" data-type='web'>
             <a href="" class="list instruktion-card shadows"
               >
               <div class="element-hiade">
@@ -101,7 +101,7 @@
               </div>
             </a>
           </li>
-          <li class="element">
+          <li class="element" data-type='desing'>
             <a href="" class="list instruktion-card shadows">
               <div class="element-hiade">
                 <picture>
@@ -125,7 +125,7 @@
               </div>
             </a>
           </li>
-          <li class="element">
+          <li class="element" data-type='app'>
             <a href="" class="list instruktion-card shadows">
               <div class="element-hiade">
                 <picture>
@@ -149,7 +149,7 @@
               </div>
             </a>
           </li>
-          <li class="element">
+          <li class="element" data-type='marketing'>
             <a href="" class="list instruktion-card shadows">
               <div class="element-hiade">
                 <picture>
@@ -173,7 +173,7 @@
               </div>
             </a>
           </li>
-          <li class="element">
+          <li class="element" data-type='app'>
             <a href="" class="list instruktion-card shadows">
               <div class="element-hiade">
                 <picture>
@@ -196,7 +196,7 @@
               </div>
             </a>
           </li>
-          <li class="element">
+          <li class="element" data-type='web'>
             <a href="" class="list instruktion-card shadows">
               <div class="element-hiade">
                 <picture>
@@ -219,7 +219,7 @@
               </div>
             </a>
           </li>
-          <li class="element">
+          <li class="element" data-type='desing'>
             <a href="" class="list instruktion-card shadows">
               <div class="element-hiade">
                 <picture>
@@ -243,7 +243,7 @@
               </div>
             </a>
           </li>
-          <li class="element">
+          <li class="element" data-type='marketing'>
             <a href="" class="list instruktion-card shadows">
               <div class="element-hiade">
                 <picture>
@@ -267,7 +267,7 @@
               </div>
             </a>
           </li>
-          <li class="element">
+          <li class="element" data-type='app'>
             <a href="" class="list instruktion-card shadows">
               <div class="element-hiade">
                 <picture>
@@ -355,5 +355,6 @@
     </footer>
     
     <script src="./js/menu.js"></script>
+    <script src="./js/filterElement.js" type="module"></script>
   </body>
 </html>
